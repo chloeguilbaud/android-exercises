@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.CheckBox
+import android.widget.TextView
 
 class LibraryActivity : AppCompatActivity() {
 
@@ -14,7 +15,13 @@ class LibraryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_library)
+
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val messageTextView = findViewById<TextView>(R.id.messageTextView)
+
+        messageTextView.setText("China Number One")
+        messageTextView.setText(R.string.zboubinet)
+
         setSupportActionBar(toolbar)
 
         checkBox = findViewById(R.id.checkBox)
