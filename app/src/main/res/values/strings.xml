@@ -8,4 +8,14 @@
     <string name="center_text">Center text</string>
     <string name="bottom_center_text">Bottom center text</string>
     <string name="above_bottom_center_text">Above Bottom center text</string>
+    <string name="left_text">Left text</string>
+    <string name="button_left_text">Button left text</string>
+    <string name="right_text">Right text</string>
+    <string name="center_text">Center text</string>
+    <string name="button_center_text">Button center text</string>
+    <string name="above_bottom_center_text">Above Bottom center text</string>
+    <string name="center_text">Center text</string>
+    <string name="left_text">Left text</string>
+    <string name="right_text">Right text</string>
+    <string name="below_bottom_left">Below bottom left</string>
 </resources>
