@@ -1,6 +1,7 @@
 package fr.android.androidexercises
 
 import android.os.Bundle
+import android.support.annotation.VisibleForTesting
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.ViewGroup
@@ -9,10 +10,17 @@ import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var loginLayout: ViewGroup
-    private lateinit var loggedText: View
-    private lateinit var presenter: LoginPresenter
-    private lateinit var passwordEdit: EditText
+    @VisibleForTesting
+    lateinit var loginLayout: ViewGroup
+
+    @VisibleForTesting
+    lateinit var loggedText: View
+
+    @VisibleForTesting
+    lateinit var presenter: LoginPresenter
+
+    @VisibleForTesting
+    lateinit var passwordEdit: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
