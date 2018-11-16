@@ -7,6 +7,7 @@ class LibraryActivity : AppCompatActivity(), Step0Fragment.OnNextStep0Listener {
 
     override fun onClick() {
         supportFragmentManager.beginTransaction()
+                .addToBackStack(Step0Fragment::class.java.name) // Ajout a backtake qui permet retour fragment d'avant a appuis sur bouton retour
                 .replace(R.id.containerFrameLayout, Step1Fragment())
                 .commit()
     }
