@@ -10,6 +10,10 @@ class LibraryActivity : AppCompatActivity(), Step0Fragment.OnNextStep0Listener {
         setContentView(R.layout.activity_library)
 
         // TODO replace Step0Fragment in containerFrameLayout
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.containerFrameLayout, Step0Fragment(), Step0Fragment::class.java.name)
+                .commit()
 
     }
 

@@ -24,14 +24,19 @@ class Step0Fragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
         val view = inflater.inflate(R.layout.fragment_step0, container, false)
 
         // TODO find TextView and set text
+        val txt = view.findViewById<TextView>(R.id.textView)
+        txt.setText(STEP_0)
 
         // TODO find Button and set listener
         val nextButton: Button
+        nextButton = view.findViewById(R.id.nextButton)
         nextButton.setOnClickListener {
             // TODO call listener
+            it.callOnClick()
         }
 
         return view
@@ -41,6 +46,8 @@ class Step0Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // TODO setText(STEP_0)
+        textView?.setText(STEP_0)
+
     }
 
     interface OnNextStep0Listener// TODO add onNext() method
