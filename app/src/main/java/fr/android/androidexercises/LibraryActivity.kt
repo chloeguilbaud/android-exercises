@@ -17,6 +17,7 @@ class LibraryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_library)
 
         // Plant logger cf. Android Timber
+        // Indique comment on va logger
         Timber.plant(Timber.DebugTree());
 
         // TODO build Retrofit
@@ -39,6 +40,7 @@ class LibraryActivity : AppCompatActivity() {
                 response!!.body()!!.forEach {
                     // TODO log books
                     Timber.i("Book: %s", it.toString())
+                    // it : itérateur disponible dans l'itération
                 }
                 // !! : check not null
                         //Timber.i(book.getTitle())
